@@ -1,0 +1,20 @@
+
+extends jade/layout
+
+block title
+	title Justin Frasier
+block content
+	.body
+		.container
+			include jade/jumbotron
+		.container
+			include jade/intro
+			.panel-group(id='accordion', role='tablist', aria-multiselectable='false')
+				include jade/experience
+				include jade/education
+				include jade/skills
+				include jade/certification
+				include jade/contactInfo
+				//include jade/temp
+
+

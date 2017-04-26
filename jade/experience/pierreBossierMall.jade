@@ -1,0 +1,24 @@
+.panel.panel-default
+	.panel-heading(role='tab', id='jobHeadingMall')
+		.h4.panel-title(role="button", data-toggle="collapse", data-parent="#accordionMall", href="#jobMall", aria-expanded="false", aria-controls="jobMall")
+			.row
+				.col-xs-6.col-md-3 
+					.bold 
+						|Pierre Bossier Mall
+				.col-xs-6.col-md-2.col-md-offset-7.text-right 
+					|Bossier City, LA
+			.row
+				.col-xs-6.col-md-2 
+					|Security Officer
+				.col-xs-6.col-md-3.col-md-offset-7.text-right 
+					|January 2014 to Present
+			
+	.panel-collapse.collapse(id='jobMall', role='tablist', aria-labelledby='jobHeadingMall')
+		.panel-body.grey.lighten-4
+			
+
+			.panel-group(id='accordion1', role='tablist', aria-multiselectable='false')
+
+				include universalprotection
+				include valorsecurityservices
+				include alliedbartonsecurityservices

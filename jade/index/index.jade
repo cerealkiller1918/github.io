@@ -1,0 +1,20 @@
+
+extends layout
+
+block title
+	title Justin Frasier
+block content
+	.body
+		.container
+			include jumbotron
+		.container
+			include intro
+			.panel-group(id='accordion', role='tablist', aria-multiselectable='false')
+				include experience
+				include education
+				include skills
+				include certification
+				include contactInfo
+				//include temp
+
+

@@ -1,0 +1,15 @@
+.panel.panel-default
+    .panel-heading(role='tab', id='heading1')
+        .h3.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse1" aria-expanded="true", aria-controls="collapse1") 
+                .head.blue-text.text-lighten-2.bold
+                    img.logo-panel(src="svg/business-person-silhouette-wearing-tie.svg")
+                    |Experience
+    .panel-collapse.collapse(id='collapse1', role='tablist', aria-labelledby='heading1')
+        .panel-body.grey.lighten-4
+            .panel-group(id='accordionMall', role='tablist', aria-multiselectable='false')
+                include experience/xententLabs
+                include experience/pierreBossierMall
+                include experience/shreveportHandyman
+                include experience/homeDepot
+                include experience/lasRailroad
+                include experience/kcs

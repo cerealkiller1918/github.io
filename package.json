@@ -1,0 +1,25 @@
+{
+  "name": "justinfrasier-2.0",
+  "version": "1.0.0",
+  "description": "Making a update version of my web site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerealkiller1918/justinfrasier-2.0.git"
+  },
+  "author": "Justin Frasier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerealkiller1918/justinfrasier-2.0/issues"
+  },
+  "homepage": "https://github.com/cerealkiller1918/justinfrasier-2.0#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
