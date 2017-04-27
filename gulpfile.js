@@ -18,13 +18,6 @@ gulp.task('jade' , function(){
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task("jadeUpdated", function(){
-	gulp.src('./jade/updated/index.jade')
-		.pipe(jade({
-			pretty: false
-		}))
-		.pipe(gulp.dest('./dist'))
-});
 
 gulp.task('brower-sync', function(){
 	browserSync.init(['./css/*.css', './js/*.js', './*.html'],{ server:{baseDir:'./'}});
@@ -37,4 +30,4 @@ gulp.task('watch', function(){
 	gulp.watch('./jade/*/*.jade',['jade']);
 });
 
-gulp.task('default',['jade','jadeUpdated', 'sass', 'brower-sync', 'watch']);
+gulp.task('default',['jade', 'sass', 'brower-sync', 'watch']);
