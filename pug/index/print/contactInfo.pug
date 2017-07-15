@@ -1,0 +1,26 @@
+block contactInfo
+    .panel.panel-default
+        .panel-heading(role='tab', id='heading5')
+            .h3.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse5" aria-expanded="true", aria-controls="collapse4" )
+                .topic
+                    .bold.head.blue-text.text-lighten-2
+                        img.logo-panel(src="svg/phone-call.svg")
+                        |Contact Info
+        .panel-collapse.collapse.in(id='collapse5', role='tablist', aria-labelledby='heading5')
+            .panel-body.grey.lighten-4
+
+                address
+                    .bold Justin Frasier
+                    | 3243 Cottonwood St.
+                    br
+                    | Bossier City, LA 71111
+                    br
+                    .phone-logo
+                        span(class="glyphicon glyphicon-earphone phone", aria-hidden="true")
+                    .phone-number
+                        |(318)564-1918
+                    .email-logo
+                        span(class="glyphicon glyphicon-envelope", aria-hidden='true')
+                    .email-text
+                        |  justin_frasier@me.com
+

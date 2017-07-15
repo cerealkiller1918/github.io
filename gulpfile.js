@@ -11,7 +11,7 @@ gulp.task('sass', function (){
 });
 
 gulp.task('pug' , function(){
-	gulp.src('./jade/index/index.pug')
+	gulp.src('./pug/index/index.pug')
 		.pipe(pug())
 		.pipe(gulp.dest('./'));
 });
