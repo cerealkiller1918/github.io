@@ -1,0 +1,14 @@
+block education
+.panel.panel-default
+    .panel-heading(role='tab', id='heading2')
+        .h4.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse2" aria-expanded="true", aria-controls="collapse2" )
+            .topic.bold.head.blue-text.text-lighten-2
+                img.logo-panel(src="svg/graduate-cap.svg")
+                |Education
+    .panel-collapse.collapse.in(id='collapse2', role='tablist', aria-labelledby='heading2')
+        .panel-body.grey.lighten-4
+
+            .panel-group(id='accordionSchool', role='tablist', aria-multiselectable='true')
+                
+                include bpcc
+                include northwood
