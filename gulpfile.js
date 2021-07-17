@@ -22,23 +22,10 @@ var css = (done) => {
 	done();
 }
 
-var move = (done) => {
-    src('.files/fonts/*')
-        .pipe(dest("dist/fonts"));
-    src('.files/flaticon/*')
-        .pipe(dest("dist/flaticon"));
-    src('.files/css/*')
-        .pipe(dest("dist/css"));
-    src('.files/js/*')
-        .pipe(dest("dist/js"));
-    src('.files/photo/*')
-        .pipe(dest("dist/photo"));
-    
-    done();
-}
+
 
 async function browser() {
-    browserSync.init(['./css/*.css', './js/*.js', './*.html'],{ server:{baseDir:'./'}});
+    browserSync.init(['./css/*.css', './js/*.js', './*.html'],{ server:{baseDir:'./dist'}});
 }
 
 async function update() {
@@ -47,12 +34,30 @@ async function update() {
 }
 
 
+var move = (done) => {
+    src('./css/*')
+        .pipe(dest('dist/css'));
+    src('./flaticon/*')
+        .pipe(dest('dist/flaticon'));
+    src('./fonts/*')
+        .pipe(dest('dist/fonts'));
+    src('./js/*')
+        .pipe(dest('dist/js'));
+    src('./photo/*')
+        .pipe(dest('dist/photo'));
+    src('./svg/*')
+        .pipe(dest('dist/svg'));
+    src('./favicon.ico')
+        .pipe(dest('dist/'));
+    src('./robots.txt')
+        .pipe(dest('dist/'));
+    done();
+}
 
-
+exports.move = move;
 exports.log = log;
 exports.html = html;
 exports.css = css;
 exports.browser = browser;
 exports.update = update;
-exports.move = move;
-exports.default = series(html, css, browser, update);
+exports.default = series(move,html, css, browser, update);
