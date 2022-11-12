@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/cerealkiller1918/justinfrasier-2.0#readme",
   "devDependencies": {
-    "browser-sync": "^2.17.0",
-    "gulp": "^3.9.1",
-    "gulp-pug": "3.3.0",
-    "gulp-sass": "^2.3.2"
+    "browser-sync": "2.27.4",
+    "gulp": "4.0.2",
+    "gulp-jade": "1.1.0",
+    "gulp-sass": "5.0.0",
+    "sass": "^1.35.2"
   }
 }
